@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div>
+  <p>{{name}}</p>
+  <p>{{person.city.cityName}}</p>
+</div>
+<script src="codegen/codegen.js"></script>
+<script src="parser/parser.js"></script>
+<script src="vnode/vnode.js"></script>
+<script src="index.js"></script>
+<script>
+let vm = new Vue({
+  el:'div',
+  data: {
+    // name:'zs',
+    // city:'wuhan',
+    message:'hello vue.js',
+    person: {
+      name:'zs',
+      city: {
+        cityName:'wuhan'
+      }
+    }
+  },
+})
+</script>
+</body>
+</html>
